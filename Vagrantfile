@@ -32,7 +32,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	echo ucu:pass | chpasswd
   cp /vagrant/provision/vm01/sshd_config /etc/ssh
   cp /vagrant/provision/vm01/ssh_config /etc/ssh
-  ssh-keygen -t rsa
   mkdir /home/ucu/.ssh
   cp /vagrant/provision/vm01/id_rsa /home/ucu/.ssh
   cp /vagrant/provision/vm01/id_rsa.pub /home/ucu/.ssh
